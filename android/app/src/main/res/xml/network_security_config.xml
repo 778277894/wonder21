@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- localhost for emulator -->
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <!-- host for local physical device connection -->
+        <domain includeSubdomains="true">192.168.137.1</domain>
+        <!-- optional: allow emulator host for Android Studio -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>
